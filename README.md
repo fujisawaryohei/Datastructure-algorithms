@@ -20,8 +20,7 @@ end
 
 ## BinarySearch algorithm with Ruby
 ```
-def binary_search(searchArr,searchNum)
-  array = (1..array_size).to_a
+def binary_search(array,searchNum)
   array.sort!
   leftIndex = 0
   rightIndex = array.index(array.last)
