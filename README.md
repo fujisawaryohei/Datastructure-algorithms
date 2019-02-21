@@ -1,3 +1,4 @@
+### Search algorithm
 ## LinearSearch algorithm with Ruby
 ```
 def linear_search(searchArr,searchNum)
@@ -35,5 +36,23 @@ def binary_search(array,searchNum)
       midIndex -= 1
     end
   end
+end
+```
+
+### Sort algorithm
+## BubbleSort algorithm with Ruby
+```
+def bubble_sort(array)
+  arrayLength = array.length
+  for length in 1..arrayLength  #要素のインデックスをlに入れる
+    for nextIndex in 1..(arrayLength - length) #
+      if array[nextIndex-1] > array[nextIndex]
+        t = array[nextIndex-1]
+        array[nextIndex-1] = array[nextIndex]
+        array[nextIndex] = t
+      end
+    end
+  end
+  p array
 end
 ```
