@@ -1,5 +1,5 @@
-### Search algorithm
-## LinearSearch algorithm with Ruby
+## Search algorithm
+### LinearSearch algorithm with Ruby
 ```
 def linear_search(searchArr,searchNum)
   index = 0
@@ -19,7 +19,7 @@ def linear_search(searchArr,searchNum)
 end
 ```
 
-## BinarySearch algorithm with Ruby
+### BinarySearch algorithm with Ruby
 ```
 def binary_search(array,searchNum)
   array.sort!
@@ -39,8 +39,8 @@ def binary_search(array,searchNum)
 end
 ```
 
-### Sort algorithm
-## BubbleSort algorithm with Ruby
+## Sort algorithm
+### BubbleSort algorithm with Ruby
 ```
 def bubble_sort(array)
   arrayLength = array.length
