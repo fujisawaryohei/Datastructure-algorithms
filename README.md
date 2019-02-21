@@ -45,7 +45,7 @@ end
 def bubble_sort(array)
   arrayLength = array.length
   for length in 1..arrayLength
-    for nextIndex in 1..(arrayLength - length) #
+    for nextIndex in 1..(arrayLength - length)
       if array[nextIndex-1] > array[nextIndex]
         t = array[nextIndex-1]
         array[nextIndex-1] = array[nextIndex]
