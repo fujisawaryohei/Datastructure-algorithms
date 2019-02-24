@@ -56,3 +56,24 @@ def bubble_sort(array)
   p array
 end
 ```
+
+### SelectionSort algorithm with Ruby
+```
+def selection_sort(array)
+  len = array.length
+  0.upto(len-2).each do |i| #検証回数
+    minIndex = i #仮最小値設定
+    (i+1).upto(len-1).each do |j| #検証要素範囲
+      minIndex = j if array[j] < array[minIndex] #最小値を随時記憶→更新
+    end
+    if i != minIndex
+      temp = array[minIndex]
+      array[minIndex] = array[i]
+      array[i] = temp
+      p array
+      #現在の仮最小値でない場合SWAP
+    end
+  end
+  return array
+end
+```
